@@ -1,6 +1,6 @@
 setup:
   addons:
-    - plan: heroku-redis
+    - plan: heroku-redis:hobby-dev
       as: REDIS
   config:
     APP_NAME: hdc-dockerize
