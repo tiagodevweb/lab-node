@@ -1,9 +1,9 @@
 setup:
   addons:
-    - plan: heroku-redis:hobby-dev
+    - plan: heroku-redis
       as: REDIS
   config:
-    APP_NAME: heroku-dockerize
+    APP_NAME: hdc-dockerize
 build:
   docker:
     web: Dockerfile
