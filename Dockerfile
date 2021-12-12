@@ -9,7 +9,8 @@ ENV PORT=$PORT
 
 COPY package* ./
 # Install the npm packages
-RUN npm install && npm update
+RUN npm install \
+    && npm update
 
 COPY . .
 
